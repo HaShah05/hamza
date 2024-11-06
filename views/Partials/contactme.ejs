@@ -1,0 +1,23 @@
+ <% if (title == 'Contact Me') { %>
+
+ <section id="contact">
+        <div class="contact container">
+            <h1>Contact Me</h1>
+            <form action="mailto:hamzashahzad551@gmail.com" method="post" accept-charset="UTF-8">
+
+            <p>Name</p>
+            <p><input type="text" name="name" size="40" required placeholder="Enter name here"> </p>
+            <p>Email</p>
+            <p><input type="email" name="email" size="40" required placeholder="Enter email here"></p>
+            <p>Phone Number</p>
+            <p><input type="tel" name="phone" size="40" required placeholder="Enter cell phone number here"> </p>
+            <p>Message</p>
+            <p><input type="text" name="text" style="height: 150px" size="60" required placeholder="Question, comment or query"></p>
+            <p><input type="submit" value="Click here to submit the form"/></p>
+            <p><input type="reset" value="Click here to reset the form"/></p>
+
+                </form> 
+
+        </div>
+    </section>
+    <%} %>

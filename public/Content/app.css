@@ -1,0 +1,47 @@
+/* custom css goes here */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/images/hero-bg.jpg') center/cover;
+    color: white;
+}
+
+.nav-item {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+}
+
+.social-links {
+    padding: 1rem 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.main-content {
+    min-height: calc(100vh - 160px); /* Account for nav and footer */
+    padding: 2rem 0;
+}
